@@ -4,10 +4,10 @@ import os
 import praw
 import random
 import asyncio
-reddit=praw.Reddit(client_id="zbhc-7ufGQ4ZTA",
-                  client_secret="Cvm97EdyUFXFDYyYvyitAGsOdxP7HA",
-                  username="KingshukK",
-                  password="Protection2@",
+reddit=praw.Reddit(client_id="u kno it",
+                  client_secret="u kno it too",
+                  username="your reddit username",
+                  password="your pass",
                   user_agent="Meme")
 
 client = commands.Bot(command_prefix="e!")
@@ -36,14 +36,6 @@ async def meme(ctx):
 
     await ctx.send(embed=em)
     while True:
-        await asyncio.sleep(600)	
+        await asyncio.sleep(600)
 
-@client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
-
-    if message.content.startswith('$hello'):
-        await message.channel.send('Hello!')
-
-client.run(ODE0MDE5NjQ1MzMzMDQ1Mjc5.YDXw3w.0pL9NxppIxGmRNo8kLpUae1d6fM)
+client.run("token here")
